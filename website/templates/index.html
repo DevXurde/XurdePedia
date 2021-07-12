@@ -2,6 +2,52 @@
 
 {% block content %}
 
-<h1>Flask Wikipedia Searcher<h1>
+<form action="" method="POST">
+    <section class="text-gray-600 body-font relative mb-20" id="search_section">
+        <div class="container px-5 py-24 mx-auto pb-0">
+            <div class="flex flex-col text-center w-full mb-6">
+                <h1 class="title-font sm:text-4xl text-3xl mb-2 font-medium text-gray-900">Search</h1>
+            </div>
+            <div class="lg:w-1/2 md:w-2/3 mx-auto">
+                <div class="flex flex-wrap -m-2">
+                    <div class="p-2 w-full pt-0">
+                        <div class="relative">
+                            <input type="text" id="search" name="search" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                        </div>
+                    </div>
+                    <div class="p-2 w-full">
+                        <button class="flex mx-auto text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg" type="submit">Search</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</form>
+
+
+<hr>
+
+
+<section class="text-gray-600 body-font">
+    <div class="container mx-auto flex px-5 py-24 items-center justify-center flex-col pb-0 mb-0">
+        <div class="text-center lg:w-2/3 w-full">
+            <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">Results</h1>
+         </div>
+    </div>
+
+    <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center pt-10 mt-0">
+        <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+            <h1 class="title-font sm:text-3xl text-2xl mb-4 font-medium text-gray-900">
+                {{query}}
+            </h1>
+
+            <p class="mb-8 leading-relaxed text-2xl">
+                {{result}}
+            </p>
+
+        </div>
+    </div>
+</section>
+
 
 {% endblock content %}
