@@ -1,7 +1,6 @@
 {
-    "title":"Flask Wikipedia Searcher",
-
-    "host":"localhost",
-    "port":"8080",
-    "secret_key":"bdwhd wjdbwjd"
+    "title": "XurdePedia",
+    "host": "localhost",
+    "port": "8080",
+    "secret_key": "bdwhd wjdbwjd"
 }

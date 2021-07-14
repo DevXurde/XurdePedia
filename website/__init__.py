@@ -1,15 +1,18 @@
 from flask import Flask
 import json
 
+
 def open_settings():
     with open("settings.json", "r") as file:
         args = json.load(file)
     return args
 
+
 settings = open_settings()
 
 host = settings["host"]
 port = settings["port"]
+
 
 def create_app():
     app = Flask(__name__)
