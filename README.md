@@ -9,7 +9,11 @@ This is a simple wikipedia searcher created with python and flask .
 ## How To Use
 Clone this repository
 ```bash
-git clone https://https://github.com/DevXurde/flask-wikipedia-searcher.git
+git clone https://https://github.com/DevXurde/XurdePedia.git
+```
+Change Directory to Xurde Pedia
+```bash
+cd XurdePedia
 ```
 Install all the dependencies
 ```bash
